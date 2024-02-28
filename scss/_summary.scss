@@ -1,0 +1,128 @@
+@use 'variables.scss';
+
+.summary {
+    margin: 18px;
+    display: flex;
+    flex-direction: column;
+    
+
+    @media (min-width: 740px) {
+        width: 315px;
+        align-items: center;
+    }
+
+    h2 {
+        color: $Dark-gray-blue;
+        font-size: 1.2rem;
+        margin-left: 12px;
+        margin-bottom: 13px;
+    }
+
+    div {
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        @media (min-width: 740px) {
+            margin: 8px;
+        }
+    }
+
+    button {
+        @media (min-width: 740px){
+            height: 100px;
+            width: 250px;
+        }
+        width: 315px;
+        height: 60px;
+        margin: 13px;
+        cursor: pointer;
+        transition: all 0.7s;
+        background-color: $Dark-gray-blue;
+        color: $White;
+        border-radius: 50px;
+        border: none;
+
+        h3 {
+            font-size: 1.1rem;
+        }
+    }
+
+    button:hover {
+        background: linear-gradient($Light-slate-blue, $Light-royal-blue);
+    }
+
+}
+
+.summary__box {
+    border-radius: 10px;
+
+    div {
+        p {
+            margin: 6px;
+        }
+
+        img {
+            margin: 6px;
+        }
+
+        span {
+            margin: 6px;
+            font-weight: bold;
+            color: $Dark-gray-blue;
+        }
+
+        strong {
+            margin: 6px;
+            color: $Light-gray;
+        }
+
+    }
+
+
+
+
+}
+
+.visual {
+    background-color: $Cobalt-blue-a;
+
+    div {
+        p {
+            color: $Cobalt-blue;
+            font-weight: bold;
+        }
+    }
+}
+
+.verbal {
+    background-color: $Green-teal-a;
+
+    div {
+        p {
+            color: $Green-teal;
+            font-weight: bold;
+        }
+    }
+}
+
+.memory {
+    background-color: $Orangey-yellow-a;
+
+    div {
+        p {
+            color: $Orangey-yellow;
+            font-weight: bold;
+        }
+    }
+}
+
+.reaction {
+    background-color: $Light-red-a;
+
+    div {
+        p {
+            color: $Light-red;
+            font-weight: bold;
+        }
+    }
+}

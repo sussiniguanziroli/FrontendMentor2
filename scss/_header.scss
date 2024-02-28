@@ -1,0 +1,74 @@
+@use 'variables.scss';
+
+.header {
+    border-bottom: 1px $Cobalt-blue solid;
+    border-bottom-left-radius: 37px;
+    border-bottom-right-radius: 37px;
+    padding: 15px;
+    background: linear-gradient($Light-slate-blue, $Light-royal-blue);
+    height: 355px;
+    @media (min-width: 740px){
+        width: 310px;
+        height: 430px;
+        border-radius: 37px;
+    }
+}
+
+.header__score {
+    text-align: center;
+    margin-top: 7px;
+    h3 {
+        color: $Light-lavender;
+        font-size: 1.2rem;
+
+    }
+}
+
+.header__circle {
+    margin: 17px;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+
+    div {
+        justify-content: center;
+        width: 140px;
+        height: 140px;
+        border-radius: 200px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient( $Violet-blue, $Persian-blue);
+
+        h1 {
+            font-weight: 900;
+            font-size: 3.5rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: $White;
+        }
+        p{
+            color: $Light-lavender;
+        }
+
+    }
+
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    p{
+        margin: 8px;
+        color: $Light-lavender;
+        font-size: 1rem;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.5rem;
+        color: $White;
+    }
+}
